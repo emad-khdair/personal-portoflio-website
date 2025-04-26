@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Khdair - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/icon.svg" type="image/svg+html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#" class="logo-text">Mohammed Khdair</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1><span class="animated-text">Hi, I'm Mohammed</span></h1>
+            <p>
+              An aspiring self-taught
+              <span class="highlight">developer</span> and IT engineer,
+              passionate about building impactful and scalable applications.
+            </p>
+            <p class="location">Dubai, UAE</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn primary-btn">Resume</a>
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/emadkhdair/"
+                  target="_blank"
+                  class="social-btn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/emad-khdair"
+                  target="_blank"
+                  class="social-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="img/me.png" alt="Mohammed" class="profile-image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-content">
+          <p>
+            I have a Bachelor's degree in Computer Engineering and current work
+            as an IT Engineer. Now, I'm moving into software development and
+            enjoy working in challenging environments. I'm looking for a chance
+            to join a team where I can make a real difference and help build
+            something great.
+          </p>
+          <div class="view-more">
+            <button id="view-more-btn">
+              <i class="fas fa-chevron-down"></i> View more
+            </button>
+            <div id="more-content" class="hidden">
+              <p>
+                As a self-taught developer, I've developed a disciplined
+                approach to learning and problem-solving.
+              </p>
+              <p>
+                Outside of coding, I like reading tech blogs, learn new
+                technoglogies, problem solve and help new developers. I believe
+                technology has the power to create real, positive change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2 class="section-title">RECENT PROJECTS</h2>
+        <div class="projects-carousel">
+          <button class="carousel-btn prev" id="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="projects-wrapper">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/guess-my-number-showcase.png"
+                  alt="Guess The Number"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Guess The Number</h3>
+                <p>
+                  Fun and interactive JavaScript game where the player must
+                  guess a randomly generated number between 1 and 20...
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/personal-portfolio-showcase.png"
+                  alt="Personal Portfolio Website"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                  A personal portfolio website, built with HTML, CSS, and
+                  JavaScript...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" id="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="technologies" class="technologies-section">
+        <h2 class="section-title">TECHNOLOGIES / SKILLS</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-html5"></i></div>
+            <p>HTML</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+            <p>CSS</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-js"></i></div>
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-python"></i></div>
+            <p>Python</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fas fa-database"></i></div>
+            <p>SQL</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+            <p>Git/GitHub</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fas fa-bug"></i></div>
+            <p>Debugging</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-wordpress"></i></div>
+            <p>WordPress</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fas fa-headset"></i></div>
+            <p>Technical Support</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-figma"></i></div>
+            <p>Figma</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fas fa-ticket-alt"></i></div>
+            <p>Ticketing Systems</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+            <p>Networking</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-windows"></i></div>
+            <p>Active Directory</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon"><i class="fab fa-microsoft"></i></div>
+            <p>Office 365</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="connect-section">
+        <h2 class="section-title">LET'S CONNECT</h2>
+        <div class="connect-content">
+          <p class="connect-text">
+            Any questions, proposals, or collaborations? Feel free to reach out.
+          </p>
+          <a href="mailto:mohammed.khdair@outlook.com" class="btn primary-btn"
+            >Say Hello</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mohammed Khdair</p>
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/emadkhdair/"
+          target="_blank"
+          class="footer-social-link"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
