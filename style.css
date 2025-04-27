@@ -286,16 +286,16 @@ nav a:hover {
 .project-card {
   background: var(--card-color);
   border-radius: 8px;
-  width: 300px; /* Increased from 280px */
-  min-width: 300px; /* Increased from 280px */
+  width: 280px;
+  min-width: 280px;
   overflow: hidden;
   transition: transform var(--transition-speed);
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Added white border like tech items */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  border-color: var(--muted-color); /* Match tech item hover border color */
+  border-color: var(--muted-color);
 }
 
 .project-image img {
@@ -467,9 +467,18 @@ footer {
   .tech-grid {
     grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
   }
+  
+  .project-card {
+    width: 260px;
+    min-width: 260px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .logo-text {
+    font-size: 20px;
+  }
+  
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
@@ -484,6 +493,15 @@ footer {
   .tech-grid {
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   }
+  
+  .project-card {
+    width: 240px;
+    min-width: 240px;
+  }
+  
+  .project-image img {
+    height: 140px;
+  }
 
   footer {
     flex-direction: column;
@@ -497,6 +515,22 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .header-container {
+    padding: 0 0.75rem;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+  }
+  
+  nav ul {
+    gap: 1rem;
+  }
+  
+  nav a {
+    font-size: 13px;
+  }
+  
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
@@ -509,5 +543,49 @@ footer {
   .tech-icon {
     font-size: 18px;
     margin-bottom: 0.5rem;
+  }
+  
+  .project-card {
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  .project-image img {
+    height: 120px;
+  }
+  
+  .project-info {
+    padding: 0.75rem;
+  }
+  
+  .project-info h3 {
+    font-size: 14px;
+  }
+  
+  .project-info p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo-text {
+    font-size: 16px;
+  }
+  
+  nav ul {
+    gap: 0.75rem;
+  }
+  
+  nav a {
+    font-size: 12px;
+  }
+  
+  .project-card {
+    width: 180px;
+    min-width: 180px;
+  }
+  
+  .project-image img {
+    height: 100px;
   }
 }
